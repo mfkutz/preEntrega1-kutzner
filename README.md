@@ -1,1 +1,1 @@
-Entrega final con CSS nativo. 
+Entrega
