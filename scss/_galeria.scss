@@ -1,0 +1,31 @@
+/*-----------------------GALERIA------------------------*/
+
+.textG{
+	color: $colorPrimario;
+	padding-top: 15px;
+	text-transform: uppercase;
+}
+
+.fondoG {
+	background-color: $transpNegro2;
+
+}
+
+#galeria img {
+	width: 100%;
+}
+
+#galeria .col-lg-4 {
+	padding: 2px;
+}
+
+.galeria{
+		padding-top: 40px;
+}
+
+.animacionG{
+transition: all 0.6s;
+}
+.animacionG:hover{
+	transform:scale(.95);
+}

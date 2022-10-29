@@ -1,0 +1,345 @@
+/*-----------GOOGLE FONTS--------------*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+/*--------INICIO ROOT--------*/
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Montserrat', sans-serif; }
+
+body {
+  background-image: url(../assets/img/principalchess.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover; }
+
+/*------------------INICIO BOTON-----------------*/
+button {
+  width: 125px;
+  color: #EFEFEF;
+  border: 0px;
+  font-size: 20px;
+  margin-top: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 5px;
+  transition: width 1s; }
+
+button:hover {
+  background-color: #488FB1;
+  transition: .5s; }
+
+  .botonTienda{
+    background-color: red;
+  }
+
+  .botonTienda:hover{
+    background-color: gray;
+    transition: .5s;
+  }
+
+
+
+
+/*-------------------BARRA DE NAVEGACION------------*/
+.nav__checkbox {
+  display: none; }
+
+.nav__toggle {
+  cursor: pointer;
+  margin: .8rem 1rem;
+  position: absolute;
+  right: 0; }
+
+.nav__toggle svg {
+  fill: #EFEFEF;
+  width: 1.6rem; }
+
+.nav__toggle .close {
+  display: none; }
+
+.nav__toggle .close,
+.nav__toggle .menu {
+  margin-top: .3rem; }
+
+.nav__menu {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 1rem; }
+
+.nav__menu li {
+  list-style-type: none;
+  display: none; }
+
+.nav__menu li:first-child {
+  margin-right: auto;
+  display: block; }
+
+.menu__logo {
+  height: 60px; }
+
+.menu__logo img {
+  height: 100%; }
+
+.nav__menu a {
+  text-decoration: none;
+  color: #EFEFEF;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600; }
+
+a:hover {
+  color: #488FB1;
+  text-shadow: 1px 1px 2px black;
+  transition: all .1s; }
+
+#nav__checkbox:checked ~ ul.nav__menu li {
+  display: block; }
+
+#nav__checkbox:checked ~ label.nav__toggle .close {
+  display: block; }
+
+#nav__checkbox:checked ~ label.nav__toggle .menu {
+  display: none; }
+
+/*---------MAIN INICIO---------*/
+.main {
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 700px;
+  text-align: center; }
+
+.main h1 {
+  color: #EFEFEF;
+  font-size: 4rem;
+  text-shadow: 2px 3px 2px black; }
+
+/*------------ MAIN CAMPEONATO------------*/
+.mainCamp {
+  display: grid;
+  grid-template-areas: "mainCizq mainCder";
+  grid-template-rows: 700px;
+  grid-template-columns: 1fr 1fr; }
+
+.mainCizq {
+  grid-area: mainCizq;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #EFEFEF;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 50px; }
+
+.mainCder {
+  grid-area: mainCder;
+  background-color: black;
+  background-image: url(../assets/img/contrarey.jpg);
+  display: flex;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.parrafo_match {
+  padding-top: 20px; }
+
+/*------------MAIN TOP5 ------------*/
+.maintop {
+  display: grid;
+  grid-template-areas: "mainTopizq mainTopmed mainTopder";
+  grid-template-rows: 700px;
+  grid-template-columns: 1fr 1fr 1f; }
+
+.mainTopizq {
+  grid-area: mainTopizq;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #EFEFEF;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center; }
+
+.mainTopmed {
+  grid-area: mainTopmed;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #EFEFEF;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center; }
+
+.mainTopder {
+  grid-area: mainTopder;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #EFEFEF;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center; }
+
+.animTop {
+  transition: all 0.6s; }
+
+.animTop:hover {
+  transform: scale(1.2); }
+
+/*------------- MAIN CONTACTO---------------*/
+.maintopCont {
+  display: grid;
+  grid-template-areas: "mainTopizq mainTopmed mainTopder";
+  grid-template-rows: 700px;
+  grid-template-columns: 1fr 1fr 1fr; }
+
+.mainTopmedCont {
+  grid-area: mainTopmed;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #EFEFEF;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center; }
+
+/*-----------------------FORMULARIO----------------*/
+.formulariocolumna {
+  max-width: 510px;
+  margin: 0 auto;
+  text-align: left; }
+
+form {
+  width: 100%;
+  padding: 20px; }
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"] {
+  width: 100%;
+  margin: 10px 0;
+  border: 4px solid #EFEFEF;
+  border-radius: 3px;
+  background-color: #EFEFEF;
+  padding: 3px 10px; }
+
+form label {
+  width: 100%;
+  font-weight: inherit;
+  display: inline-block; }
+
+textarea {
+  width: 100%;
+  height: 220px;
+  margin: 2px 0;
+  border: 1px solid #EFEFEF;
+  background-color: #EFEFEF;
+  resize: none;
+  border-radius: 2px;
+  display: block;
+  padding: 3px 10px; }
+
+.cajabotonC {
+  display: flex;
+  justify-content: center; }
+
+.contactoT {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px; }
+
+/*-----------------------GALERIA------------------------*/
+.textG {
+  color: #EFEFEF;
+  padding-top: 15px;
+  text-transform: uppercase; }
+
+.fondoG {
+  background-color: rgba(0, 0, 0, 0.8); }
+
+#galeria img {
+  width: 100%; }
+
+#galeria .col-lg-4 {
+  padding: 2px; }
+
+.galeria {
+  padding-top: 40px; }
+
+.animacionG {
+  transition: all 0.6s; }
+
+.animacionG:hover {
+  transform: scale(0.95); }
+
+/*----------------------FOOTER--------------------*/
+.redesS {
+  display: flex;
+  width: 310px;
+  height: 80px;
+  list-style-type: none;
+  border-radius: .6rem;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 10px; }
+
+.fooOne {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.animfoo:hover {
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+  fill: #EFEFEF; }
+
+.faceIco, .linkIco, .InstaIco, .twittIco {
+  width: 2.5rem; }
+
+small {
+  color: #EFEFEF;
+  padding: 10px;
+  text-shadow: 1px;
+  background-color: red;
+  border-radius: 9px; }
+
+/*--------------MEDIA QUERIE MENU--------------*/
+@media only screen and (min-width: 768px) {
+  .nav__toggle {
+    display: none; }
+  .nav__menu li {
+    display: block; }
+  .nav__menu {
+    flex-direction: row; } }
+
+/*--------MEDIA QUERIE MOBILE--------*/
+@media only screen and (max-width: 768px) {
+  .main h1 {
+    font-size: 2rem;
+    text-shadow: 2px 3px 2px black; }
+  .mainCamp {
+    display: grid;
+    grid-template-areas: "mainCizq" 
+ "mainCder";
+    grid-template-rows: 400px 400px;
+    grid-template-columns: 100%; }
+  .maintopCont {
+    display: grid;
+    grid-template-areas: "mainTopmed";
+    grid-template-rows: 700px;
+    grid-template-columns: 1fr; }
+  .contactoT {
+    display: flex;
+    justify-content: center; } }

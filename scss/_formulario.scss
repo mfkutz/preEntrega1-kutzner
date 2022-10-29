@@ -1,0 +1,54 @@
+/*-----------------------FORMULARIO----------------*/
+
+.formulariocolumna{
+	max-width: 510px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+form{
+	width:100%;
+	padding:20px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"]
+{
+	width:100%;
+	margin:10px 0;
+	border:4px solid $colorPrimario;
+	border-radius:3px;
+	background-color: $colorPrimario;
+	padding:3px 10px;
+}
+
+
+form label{
+	width:100%;
+	font-weight:inherit;
+	display:inline-block;	
+}
+
+textarea{
+	width:100%;
+	height:220px;
+	margin:2px 0;
+	border:1px solid $colorPrimario;
+	background-color:$colorPrimario;			
+	resize:none;
+	border-radius:2px;
+	display:block;
+	padding:3px 10px;
+}
+
+.cajabotonC {
+	display: flex;
+	justify-content: center;
+}
+
+.contactoT{
+	display: flex;
+	justify-content: center;
+	padding-top: 20px;
+}

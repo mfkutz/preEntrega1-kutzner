@@ -1,0 +1,104 @@
+/*---------MAIN INICIO---------*/
+.main {
+	background-color: $transpNegro3;
+	display: flex;                                               
+	flex-direction: column;                                      
+	align-items:center;
+	justify-content: center;                                     
+	height: 700px;
+	text-align: center;
+}
+.main h1 {                                                       
+	color: $colorPrimario;                                             
+	font-size: 4rem;                                             
+	text-shadow: 2px 3px 2px $colorSecundario;  
+}
+
+/*------------ MAIN CAMPEONATO------------*/
+.mainCamp{
+	display: grid;
+	grid-template-areas: 
+	"mainCizq mainCder";
+	grid-template-rows: 700px;
+	grid-template-columns: 1fr 1fr;	
+}
+.mainCizq{
+	grid-area: mainCizq;
+	background-color: $transpNegro4;
+	color: $colorPrimario;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	padding: 50px;
+}
+.mainCder{
+	grid-area: mainCder;
+	background-color: $transpNegro5;
+	background-image: url(../assets/img/contrarey.jpg);
+	display: flex;
+	background-repeat: no-repeat;                                
+	background-position: center;                                 
+	background-size: cover; 
+}
+.parrafo_match{
+	padding-top: 20px;
+}
+
+/*------------MAIN TOP5 ------------*/
+.maintop{
+	display: grid;
+	grid-template-areas: 
+	"mainTopizq mainTopmed mainTopder";
+	grid-template-rows: 700px;
+	grid-template-columns: 1fr 1fr 1f;	
+}
+
+.mainTopizq{
+	grid-area: mainTopizq;
+	background-color: $transpNegro3;
+	color: $colorPrimario;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+	
+.mainTopmed{
+	@include mainMix
+}
+
+.mainTopder{
+	grid-area: mainTopder;
+	background-color: $transpNegro3;
+	color: $colorPrimario;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+	
+.animTop{
+transition: all 0.6s;
+}
+
+.animTop:hover{
+	transform:scale(1.2);
+}
+
+/*------------- MAIN CONTACTO---------------*/
+.maintopCont{
+	
+	display: grid;
+	grid-template-areas: 
+	"mainTopizq mainTopmed mainTopder";
+	grid-template-rows: 700px;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.mainTopmedCont{
+ 	@include mainMix
+}

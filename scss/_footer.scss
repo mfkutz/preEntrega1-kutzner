@@ -1,0 +1,38 @@
+/*----------------------FOOTER--------------------*/
+.redesS {
+	display: flex;
+	width: 310px;
+	height: 80px;
+	list-style-type: none;
+	border-radius: .6rem;
+	justify-content: space-around;
+	align-items: center;
+	background-color: $transpBlanco;
+	margin: 10px;
+}
+
+.fooOne {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.animfoo:hover {                                         
+	border-radius: 5px;
+	background-color: $transpNegro1;
+	fill: $colorPrimario;
+}
+
+
+.faceIco, .linkIco, .InstaIco, .twittIco  {
+	width: 2.5rem;
+}
+
+small {
+	color: $colorPrimario;
+	padding: 10px;
+	text-shadow: 1px;
+	background-color: $colorTres;
+	border-radius: 9px;
+}

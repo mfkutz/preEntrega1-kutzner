@@ -1,0 +1,46 @@
+/*--------------MEDIA QUERIE MENU--------------*/
+
+@media only screen and (min-width: 768px) {
+  .nav__toggle {
+    display: none;
+  }
+
+.nav__menu li {
+    display: block;
+  }
+.nav__menu {
+    flex-direction: row;
+  }
+}
+
+/*--------MEDIA QUERIE MOBILE--------*/
+@media only screen and (max-width: 768px){
+
+  .main h1 {                                                       
+  font-size: 2rem;                                             
+  text-shadow: 2px 3px 2px $colorSecundario;  
+}
+.mainCamp{
+  
+  display: grid;
+  grid-template-areas: 
+  "mainCizq" 
+  "mainCder";
+  grid-template-rows: 400px 400px;
+  grid-template-columns: 100%;
+  
+}
+.maintopCont{
+  
+  display: grid;
+  grid-template-areas: 
+  "mainTopmed";
+  grid-template-rows: 700px;
+  grid-template-columns: 1fr;
+  
+}
+.contactoT{
+  display: flex;
+  justify-content: center;
+}
+}
